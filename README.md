@@ -1,21 +1,9 @@
-# Assignment 2
-
-Subject : OS and Networks <br>
-Roll No : 2018113003
+# Kustom Shell
 
 ## General
 
-The code was tested out with Ubuntu 20.04 running on WSL2, thus hardware interrupts were not tested extensively. The newborn command 
-does not work but the idea behind the command is given in the code (stack smashing occurs). Also all process related details are taken from /proc virtual filesystem and thus does not work on other operating systems.
+The code was tested out with Ubuntu 20.04 running on WSL2, thus hardware interrupts were not tested extensively. The newborn command does not work but the idea behind the command is given in the code (stack smashing occurs). Also all process related details are taken from /proc virtual filesystem and thus does not work on other operating systems.
 
 ## Main Shell
 
-My shell is names hash, and does most of what was expected. The last requirement of process information on exiting of background process is not done.
-
-## Coding style
-
-The code was initially written by having each of them as sperate executables but was later changed and added to header files to be added to the shell function itself. The makefile is a simple gcc of all files with not a lot optimization done.
-
-# Codes
-
-All the functions that require the inbuilt functions of shell itself are withing the main file, others are in their respective files
+The shell allows I/O redirection, Piping, Process Management and Signal Handling. It sets up the current dirctory as the home dircetory and allows `cd` to send it back to home. It also allows usage of `~` for indicating the home folder.
